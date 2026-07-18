@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>مصنع القمرين للبلاستيك - فخامة التعبئة والتغليف</title>
+    <!-- خط القاهرة بنسخته العريضة والفاخرة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;650;900&display=swap" rel="stylesheet">
+    
+    <!-- أدوات التصميم الحديثة Tailwind و Lucide Icons و Animate.css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* خلفية هادئة مريحة للعين */
+            color: #1e293b;
+            position: relative;
+        }
+        /* العلامة المائية الفاخرة */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background-image: url('watermark.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.04;
+            z-index: -1;
+            pointer-events: none;
+        }
+        /* 🎭 تأثير الستارة المعطوفة الفريد ثلاثي الأبعاد من اليمين إلى اليسار */
+        .premium-curtain-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 35%, #ef4444 70%, #f9f8fb 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 78%, 15% 100%, 0 92%);
+            border-bottom-left-radius: 80px 40px;
+            position: relative;
+        }
+        /* ظل داخلي وخارجي لتعميق حركة الستارة */
+        .premium-curtain-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0; height: 100%;
+            background: linear-gradient(to top, rgb(19, 99, 219), transparent);
+            pointer-events: none;
+            z-index: 1;
+        }
+        /* فواصل زخرفية مذهبة مبتكرة */
+        .royal-badge {
+            background: linear-gradient(135deg, #2055d1 0%, #2b0e7bb9 100%);
+            border: 1px solid #2d57b0e8;
+            color: #ebe9e2;
+        }
+
+        /* تظليل وتأثير أزرار التبويب الفاخرة عند التنشيط */
+        .luxury-tab-active {
+            background: linear-gradient(135deg, #ffffff 0%, #fdfbf7 100%);
+            border-right: 5px solid #d97706 !important;
+            box-shadow: 0 15px 35px rgba(21, 21, 21, 0);
+            transform: translateX(-4px);
+        }
+
+        /* أنيميشن نبضي ناعم لزر الواتساب المدمج */
+        @keyframes pulse-gold {
+            0%, 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(6, 182, 38, 0.938); }
+            50% { transform: scale(1.02); box-shadow: 0 10px 25px rgba(245, 200, 22, 0.811); }
+        }
+        .pulse-whatsapp-btn {
+            animation: pulse-gold 3s infinite ease-in-out;
+          }  
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- 1️⃣ رأس الموقع: الستارة المعطوفة المذهبة الفاخرة (Curtain Navigation Layout) -->
+    <div class="premium-curtain-header text-stone-900 pt-3 pb-24 px-4 shadow-2xl relative z-20">
+        <header class="max-w-7xl mx-auto flex justify-between items-center py-4 relative z-10">
+            <!-- الشعار والهوية -->
+            <div class="flex items-center gap-4">
+                <div class="w-20 h-20 bg-white/90 p-1 rounded-2xl flex items-center justify-center shadow-2xl border-2 border-white/50 transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260718_203200.jpg" alt="شعار القمرين" class="w-full h-full object-contain">
+                </div>
+                <div>11
+                    <h1 class="text-3xl font-black tracking-wide text-stone-950 drop-shadow-sm">مصنع القمرين</h1>
+                    <p class="text-xs font-bold text-blue-900 tracking-widest mt-0.5 bg-white/40 px-2 py-0.5 rounded-full inline-block">للبلاستيك </p>
+                </div>
+            </div>
+
+            <!-- القائمة الرئيسية بتصميم زجاجي عاجي -->
+            <nav class="hidden lg:flex gap-8 bg-white/40 px-8 py-3 rounded-2xl border border-white/50 backdrop-blur-xl text-stone-950 font-bold text-sm shadow-sm">
+                <a href="#home" class="hover:text-amber-900 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-0.5 after:bg-amber-800 hover:after:w-full after:transition-all">الرئيسية</a>
+                <a href="#products" class="hover:text-amber-900 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-0.5 after:bg-amber-800 hover:after:w-full after:transition-all">منتجاتنا الفاخرة</a>
+                <a href="#gallery" class="hover:text-amber-900 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-0.5 after:bg-amber-800 hover:after:w-full after:transition-all">استوديو الإنتاج</a>
+                <a href="#delivery" class="hover:text-amber-900 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-0.5 after:bg-amber-800 hover:after:w-full after:transition-all">الأسطول الذهبي</a>
+                <a href="#contact" class="hover:text-amber-950 transition-colors bg-stone-950 text-amber-400 px-4 py-1.5 rounded-xl text-xs font-black shadow-md">اطلب الآن</a>
+            </nav>
+
+            <!-- زر الجوال -->
+            <button id="menu-btn" class="lg:hidden p-2 text-stone-950 hover:bg-black/5 rounded-xl transition-all focus:outline-none">
+                <i data-lucide="menu" id="menu-icon" class="w-7 h-7"></i>
+            </button>
+        </header>
+
+        <!-- قائمة الجوال الذكية -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-stone-950/95 backdrop-blur-2xl rounded-2xl mt-4 p-5 animate__animated animate__fadeIn relative z-30 border border-amber-500/20 shadow-2xl">
+            <nav class="flex flex-col gap-4 text-amber-100">
+                <a href="#home" class="text-right hover:text-amber-400 font-bold py-2 border-b border-white/5">الرئيسية</a>
+                <a href="#products" class="text-right hover:text-amber-400 font-bold py-2 border-b border-white/5">منتجاتنا الفاخرة</a>
+                <a href="#gallery" class="text-right hover:text-amber-400 font-bold py-2 border-b border-white/5">استوديو الإنتاج</a>
+                <a href="#delivery" class="text-right hover:text-amber-400 font-bold py-2 border-b border-white/5">الأسطول الذهبي</a>
+                <a href="#contact" class="text-right text-amber-400 font-black py-2">بوابة الطلب المباشر</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2️⃣ واجهة الإبهار الساحرة (Hero Section) -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <!-- الشعار الضخم الذي يملأ الصفحة الأولى -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+            <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260718_203200.jpg" alt="خلفية الشعار" class="w-[120%] max-w-none h-auto object-contain animate-pulse">
+        </div>
+
+        <div class="max-w-5xl mx-auto space-y-8 animate__animated animate__fadeInUp relative z-10">
+            <!-- الشعار المركزي البارز -->
+            <div class="flex justify-center mb-10">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-red-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                    <div class="relative w-64 h-64 md:w-96 md:h-96 bg-white/10 backdrop-blur-md rounded-full p-4 shadow-[0_0_50px_rgba(0,0,0,0.2)] border-8 border-white/20 overflow-hidden">
+                        <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260718_205305.jpg" alt="شعار مصنع القمرين" class="w-full h-full object-contain drop-shadow-2xl">
+                    </div>
+                </div>
+            </div>
+            
+            <span class="inline-flex items-center gap-2 royal-badge px-5 py-2.5 rounded-full font-bold text-xs shadow-md tracking-wide">
+                 تميز هندسي معتمد بأعلى مقاييس الجودة العالمية
+            </span>
+            <h2 class="text-5xl md:text-8xl font-black leading-[1.15] text-stone-950 tracking-tight drop-shadow-xl">
+                نعيد صياغة المتانة <br>
+                <span class="bg-gradient-to-r from-blue-700 via-blue-600 to-red-600 bg-clip-text text-transparent drop-shadow-sm">بخطوط إنتاج عالمية</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
+                التعبئة والتغليف الحراري عالي المتانة المصمم خصيصاً ليتحمل أقصى الظروف والأوزان، وبخيارات تناسب كبار التجار والمصانع في اليمن.
+            </p>
+            
+            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#products" class="px-10 py-4.5 bg-stone-900 text-amber-400 font-black rounded-2xl shadow-2xl hover:bg-stone-850 transition-all transform hover:-translate-y-1">
+                    اكتشف خطوط الإنتاج ✨
+                </a>
+                <a href="#contact" class="px-10 py-4.5 bg-white border-2 border-amber-500/30 text-stone-800 font-black rounded-2xl shadow-md hover:border-amber-500 transition-all transform hover:-translate-y-1">
+                    طلب عرض سعر فوري
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ شاشة عرض المنتجات الفاخرة (Interactive Showcase) -->
+    <section id="products" class="py-24 bg-stone-100/50 border-y border-stone-200/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center text-center mb-20 space-y-4">
+                <div class="w-12 h-1 bg-amber-600 rounded-full"></div>
+                <h2 class="text-4xl md:text-6xl font-black text-stone-900 tracking-tight">التشكيلة <span class="text-amber-600">الأكثر متانة</span> في السوق</h2>
+                <p class="text-stone-500 max-w-2xl font-medium">نظام التبديل التفاعلي الفاخر لاستعراض مواصفات ومميزات التصنيع الخاصة بنا</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+                <!-- الأزرار الجانبية الفاخرة -->
+                <div class="lg:col-span-4 flex flex-col gap-4 justify-center">
+                    <button onclick="switchProduct('alaqi')" id="tab-alaqi" class="w-full text-right p-6 rounded-2xl bg-white/60 border border-stone-200/80 hover:border-amber-400 transition-all cursor-pointer flex justify-between items-center group luxury-tab-active">
+                        <div>
+                            <h3 class="text-2xl font-black text-stone-900 group-hover:text-amber-700 transition-colors">أكياس علاقي</h3>
+                            <p class="text-xs text-stone-400 font-bold mt-1">قوة فائقة لتحمل الأوزان الثقيلة</p>
+                        </div>
+                        <i data-lucide="arrow-left" class="w-5 h-5 text-amber-600 transform opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="switchProduct('thermal')" id="tab-thermal" class="w-full text-right p-6 rounded-2xl bg-white/60 border border-stone-200/80 hover:border-amber-400 transition-all cursor-pointer flex justify-between items-center group">
+                        <div>
+                            <h3 class="text-2xl font-black text-stone-900 group-hover:text-amber-700 transition-colors">الأكياس الحرارية</h3>
+                            <p class="text-xs text-stone-400 font-bold mt-1">حماية حرارية ممتازة للمطاعم والمراكز</p>
+                        </div>
+                        <i data-lucide="arrow-left" class="w-5 h-5 text-amber-600 transform opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+                    </button>
+
+                    <button onclick="switchProduct('super')" id="tab-super" class="w-full text-right p-6 rounded-2xl bg-white/60 border border-stone-200/80 hover:border-amber-400 transition-all cursor-pointer flex justify-between items-center group">
+                        <div>
+                            <h3 class="text-2xl font-black text-stone-900 group-hover:text-amber-700 transition-colors">أكياس السوبرات</h3>
+                            <p class="text-xs text-stone-400 font-bold mt-1">سعات ضخمة وخامات تعكس هويتك الفخمة</p>
+                        </div>
+                        <i data-lucide="arrow-left" class="w-5 h-5 text-amber-600 transform opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+                    </button>
+                </div>
+
+                <!-- لوحة التفاصيل والمواصفات مذهبة ورائعة -->
+                <div class="lg:col-span-8 bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-xl p-8 flex flex-col justify-between relative" id="product-display-box">
+                    <div class="grid md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-5 h-72 w-full overflow-hidden relative bg-stone-50 rounded-2xl border border-stone-100 shadow-inner">
+                            <img id="prod-img" src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\file_00000000afcc81f4ab672a27c9a77375.png" alt="منتجات القمرين" class="w-full h-full object-cover animate__animated animate__fadeIn">
+                            <span id="prod-badge" class="absolute top-4 right-4 bg-stone-950 text-amber-400 font-black text-xs px-4 py-2 rounded-xl shadow-md border border-amber-400/20">عالي التحمل</span>
+                        </div>
+                        <div class="md:col-span-7 space-y-4">
+                            <h3 id="prod-title" class="text-3xl font-black text-stone-900">أكياس علاقي</h3>
+                            <p id="prod-desc" class="text-stone-600 leading-relaxed text-sm font-normal">أكياس متينة وعالية التحمل بأحجام ومقاسات متنوعة، مصممة خصيصاً لتتحمل الأوزان الثقيلة والاستخدامات الشاقة في السوق والمحلات التجارية.</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 pt-2">
+                                <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                    <span class="text-xs text-stone-400 block font-bold">نسبة المتانة</span>
+                                    <span class="text-sm font-black text-amber-700">100% مضمونة</span>
+                                </div>
+                                <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                    <span class="text-xs text-stone-400 block font-bold">الخامات المستخدمة</span>
+                                    <span class="text-sm font-black text-stone-800">بلاستيك نقي فاخر</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-stone-100 mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3 h-3 bg-emerald-500 rounded-full animate-ping"></span>
+                            <span class="text-sm text-stone-800 font-bold">جاهز للتصنيع والطلب الفوري بكميات ضخمة</span>
+                        </div>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-amber-700 to-amber-600 text-stone-950 font-black rounded-xl text-center shadow-lg border border-amber-500/20 hover:opacity-95 transition-all">احجز طلبيتك الآن ⚜️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ استوديو الإنتاج والمعرض الفاخر (Gallery Studio) -->
+    <section id="gallery" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center text-center mb-16 space-y-3">
+                <div class="w-12 h-1 bg-amber-600 rounded-full"></div>
+                <h2 class="text-4xl md:text-5xl font-black text-stone-900">استوديو <span class="text-amber-600">الفخامة والإنتاج</span></h2>
+                <p class="text-stone-500 max-w-xl text-sm font-medium">توثيق حي لجودة خطوط التصنيع والأكياس الجاهزة للتوريد في المصنع</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- كرت معرض 1 -->
+                <div class="relative group h-72 bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/60 shadow-md cursor-pointer">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\file_00000000bed88246809039015a80ec63.png" alt="خطوط الإنتاج" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-amber-400 font-black text-sm">خط الإنتاج الرئيسي والآلات الحديثة</p>
+                    </div>
+                </div>
+                <!-- كرت معرض 2 -->
+                <div class="relative group h-72 bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/60 shadow-md cursor-pointer">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260716_234804.jpg" alt="أكياس علاقي فاخرة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-amber-400 font-black text-sm">أكياس علاقي متينة مجهزة للشحن والتوزيع</p>
+                    </div>
+                </div>
+                <!-- كرت معرض 3 -->
+                <div class="relative group h-72 bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/60 shadow-md cursor-pointer">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260716_233142.jpg" alt="الأكياس الحرارية الفخمة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-amber-400 font-black text-sm">فرز واختبار جودة الأكياس الحرارية المتكاملة</p>
+                    </div>
+                </div>
+                <!-- كرت معرض 4 -->
+                <div class="relative group h-72 bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/60 shadow-md cursor-pointer">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\IMG_20260716_232116.jpg" alt="أكياس السوبرات" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-amber-400 font-black text-sm">أكياس السوبر ماركت والمتاجر الكبرى الراقية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ أسطول النقل السريع (Delivery Service) -->
+    <section id="delivery" class="py-24 bg-stone-50 border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border border-stone-200 shadow-xl rounded-3xl overflow-hidden p-8 md:p-14 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="bg-amber-100 text-amber-800 text-xs font-black px-4 py-2 rounded-xl border border-amber-200">👑 أسطول التوزيع الذهبي الشامل</span>
+                    <h3 class="text-4xl font-black text-stone-900 leading-[1.2]">نغطي بتوصيلنا الآمن <br><span class="text-amber-600">كافة محافظات الجمهورية اليمنية</span></h3>
+                    <p class="text-stone-600 leading-relaxed font-normal">يمتلك مصنع القمرين أسطول توزيع لوجستي متكامل ومجهز بالكامل لتأمين وصول طلبياتكم الضخمة وبضائعكم بأمان تام وسرعة فائقة مباشرة إلى مقراتكم في أي مكان باليمن.</p>
+                    
+                    <div class="space-y-3 pt-2 text-stone-700 font-medium text-sm">
+                        <div class="flex items-center gap-3">✨ <span class="font-bold text-stone-900">شحن آمن بنسبة 100% مع ضمان سلامة الأكياس الحرارية</span></div>
+                        <div class="flex items-center gap-3">✨ <span class="font-bold text-stone-900">سرعة فائقة وتنسيق مواعيد فوري مع الإدارة</span></div>
+                        <div class="flex items-center gap-3">✨ <span class="font-bold text-stone-900">تغطية جغرافية كاملة وشاملة للمدن والأسواق المركزية</span></div>
+                    </div>
+                </div>
+                <div class="h-80 rounded-2xl overflow-hidden border border-stone-100 shadow-lg relative">
+                    <img src="c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\1783639707734.jpg" alt="التوصيل اللوجستي" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ بوابة الطلب المباشر المذهلة (Contact Portal) -->
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="max-w-2xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col items-center text-center mb-14 space-y-3">
+                <div class="w-12 h-1 bg-amber-600 rounded-full"></div>
+                <h2 class="text-4xl md:text-5xl font-black text-stone-900">بوابة الطلب <span class="text-amber-600">السريع</span></h2>
+                <p class="text-stone-500 text-xs font-bold">بمرد ملء الاستمارة، سيتم صياغة طلبك آلياً وإرساله مباشرة لواتساب الإدارة</p>
+            </div>
+
+            <form id="orderForm" class="bg-stone-50/60 border-2 border-stone-200/80 rounded-3xl p-8 md:p-12 shadow-xl space-y-6 backdrop-blur-md">
+                <div class="space-y-1.5">
+                    <label class="block font-black text-stone-800 text-sm">اسم المنشأة / العميل الكريم</label>
+                    <input type="text" id="clientName" placeholder="أدخل اسمك أو اسم المحل  " class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold text-right shadow-sm" required>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="block font-black text-stone-800 text-sm">رقم هاتف التواصل المباشر</label>
+                    <input type="tel" id="clientPhone" placeholder="أدخل رقم جوالك  " class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold text-right shadow-sm" required>
+                </div>
+
+                <div class="space-y-1.5">
+                    <label class="block font-black text-stone-800 text-sm">تفاصيل المقاسات، الأوزان، ونوع البلاستيك</label>
+                    <textarea id="orderDetails" placeholder="اكتب التفاصيل بدقة (مثال: أكياس القمرين مقاس 9 عبوة 60)..." rows="4" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold text-right shadow-sm" required></textarea>
+                </div>
+
+                <!-- 🟢 إدراج أيقونة الواتساب المباشرة هنا بداخل زر التأكيد بنبض تفاعلي مذهل 🟢 -->
+                <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white py-5 text-xl font-black rounded-2xl shadow-xl cursor-pointer flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] active:scale-95 duration-200 pulse-whatsapp-btn">
+                    <i data-lucide="message-circle" class="w-7 h-7 fill-white animate-bounce"></i>
+                    تأكيد وإرسال الطلب عبر الواتساب فوراً
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 7️⃣ تذييل الموقع الفاخر والمطور (Luxury Footer Layout) -->
+    <footer class="bg-stone-950 text-stone-400 border-t-2 border-amber-500/20 py-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
+            <div class="space-y-4">
+                <h3 class="text-amber-400 font-black text-2xl">مصنع القمرين للبلاستيك</h3>
+                <p class="text-sm leading-relaxed text-stone-400 font-normal">
+                    الوجهة الأولى والموثوقة لتصنيع وإنتاج حلول البلاستيك المتكاملة والتغليف الحراري (علاقي، حراري، سوبرات) بأحدث الآلات ووفق معايير متانة استثنائية تلبي تطلعات واحتياجات السوق اليمني الشامل.
+                </p>
+            </div>
+
+            <!-- أرقام الاتصال وعناوين المصنع مع إزالة أوقات الدوام كلياً -->
+            <div class="space-y-4">
+                <h3 class="text-amber-400 font-black text-2xl">قنوات التواصل المباشرة</h3>
+                <div class="space-y-3 text-sm font-bold">
+                    <div class="flex items-center gap-3 text-stone-300"><i data-lucide="phone" class="text-amber-400 w-5 h-5"></i> <span dir="ltr" class="hover:text-amber-300 transition-colors">+967 777 536 309</span></div>
+                    <div class="flex items-center gap-3 text-stone-300"><i data-lucide="phone" class="text-amber-400 w-5 h-5"></i> <span dir="ltr" class="hover:text-amber-300 transition-colors">+967 736141435</span></div>
+                    <div class="flex items-start gap-3 text-stone-300"><i data-lucide="map-pin" class="text-amber-400 w-5 h-5 mt-0.5"></i> <span>اليمن - تعز - الحصب - خلف جامع الشيباني</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التوقيع الاحترافي مع الحفاظ على الرقم الجديد والحقيقي للمهندس جمال -->
+        <div class="max-w-7xl mx-auto px-4 border-t border-stone-900 pt-8 text-center space-y-2 text-xs font-bold tracking-wide">
+            <p class="text-stone-600">&copy; جميع الحقوق محفوظة لمصنع القمرين 2026.</p>
+            <p class="text-stone-500">
+                تطويروبرمجية: 
+                <span class="text-amber-500 font-black text-sm">المهندس جمال الطيب | 778232617</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- 8️⃣ المنطق البرمجي للتحكم والتبديل التفاعلي -->
+    <script>
+        // تفعيل أيقونات Lucide
+        lucide.createIcons();
+
+        // بيانات المنتجات المحدثة بدقة
+        const productsData = {
+            alaqi: {
+                title: "أكياس علاقي",
+                desc: "أكياس متينة وعالية التحمل بأحجام ومقاسات متنوعة، مصممة خصيصاً لتتحمل الأوزان الثقيلة والاستخدامات الشاقة في السوق والمحلات التجارية.",
+                img: "c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\file_00000000afcc81f4ab672a27c9a77375.png",
+                badge: "عالي التحمل",
+                colorClass: "bg-stone-950 text-amber-400"
+            },
+            thermal: {
+                title: "الأكياس الحرارية",
+                desc: "أكياس بلاستيكية متميزة مصنعة بأحدث التقنيات الحرارية، مثالية للحفظ الآمن وتلبية متطلبات المحلات والمراكز التجارية والمطاعم بكفاءة عالية.",
+                img: "c:\Users\a\Desktop\موقع مصنع القمرين 1\gg\file_00000000b8dc81f48b6bbd97631bcd6e.png",
+                badge: "مقاومة حرارية",
+                colorClass: "bg-amber-700 text-white"
+            },
+            super: {
+                title: "أكياس السوبرات",
+                desc: "أكياس كبيرة وقوية مخصصة للمتاجر الكبرى والسوبرماركت، توفر سعة تخزينية ضخمة وحمولة ممتازة تعكس الهوية الاحترافية لمتجرك الفخم.",
+                img: "",
+                badge: "سعة ضخمة",
+                colorClass: "bg-amber-600 text-white"
+            }
+        };
+
+        // دالة التبديل التفاعلي
+        function switchProduct(key) {
+            const product = productsData[key];
+            const displayBox = document.getElementById('product-display-box');
+            
+            // إعادة تشغيل الأنيميشن بسلاسة لجمالية الموقع
+            displayBox.classList.remove('animate__animated', 'animate__fadeInUp');
+            void displayBox.offsetWidth; 
+            displayBox.classList.add('animate__animated', 'animate__fadeInUp');
+
+            document.getElementById('prod-title').innerText = product.title;
+            document.getElementById('prod-desc').innerText = product.desc;
+            
+            const imgEl = document.getElementById('prod-img');
+            imgEl.src = product.img;
+            
+            const badgeEl = document.getElementById('prod-badge');
+            badgeEl.innerText = product.badge;
+            badgeEl.className = `absolute top-4 right-4 z-20 font-black text-xs px-4 py-2 rounded-xl shadow-md ${product.colorClass}`;
+
+            document.querySelectorAll('#products button').forEach(btn => {
+                btn.classList.remove('luxury-tab-active');
+            });
+            document.getElementById(`tab-${key}`).classList.add('luxury-tab-active');
+        }
+
+        // تحكم القائمة المنسدلة للجوال
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            menuIcon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+            lucide.createIcons();
+        });
+
+        // صياغة وإرسال رسائل الواتساب الديناميكية إلى رقمك الجديد الحقيقي مباشرة
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const details = document.getElementById('orderDetails').value.trim();
+
+            const managerNumber = '96777536309'; 
+            const messageText = `*طلب بضاعة جديد ومميز 👑*\n` +
+                                `*----------------------------*\n\n` +
+                                `👤 *العميل / المنشأة:* ${name}\n` +
+                                `📱 *رقم الجوال للتواصل:* ${phone}\n\n` +
+                                `📦 *تفاصيل الطلبيّة والمقاسات:*\n${details}\n\n` +
+                                `_تم الإرسال فوراً من الموقع الرسمي الفاخر للمصنع_`;
+
+            const encodedMessage = encodeURIComponent(messageText);
+            const whatsAppUrl = `https://api.whatsapp.com/send?phone=${managerNumber}&text=${encodedMessage}`;
+
+            window.open(whatsAppUrl, '_blank');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
